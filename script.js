@@ -1237,7 +1237,7 @@ function getTextLength(str) {
 function getApiLimits(apiName) {
     // returns { maxSegment, maxTotal } for each API
     if (apiName === 'oai-tts' || (customAPIs[apiName] && customAPIs[apiName].format === 'openai')) {
-        return { maxSegment: 400, maxTotal: 2000 };
+        return { maxSegment: 400, maxTotal: 6000 };
     } else {
         return { maxSegment: 5000, maxTotal: 100000 };
     }
